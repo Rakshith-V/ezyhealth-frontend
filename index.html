@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Ezy-Health</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js" type="97c79f8123ca910610ebe467-text/javascript"></script>
+    <script src="js/pace.min.js" type="97c79f8123ca910610ebe467-text/javascript"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/test.png" alt="Homepage" style="height:25px;width:100px;">
+            </a>
+        </div>
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll" href="#contact" title="about">Predict</a></li>
+                </ul>
+
+
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav> <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg"
+        data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content" style="padding-bottom:3em;">
+
+            <div class="row home-content__main" style="padding-bottom:15em;">
+
+                <h3>Welcome to <b>Ezy-Health</b>
+                    <h1>
+                        We are a group of coders<br>
+                        who have designed a<br>
+                        model for predicting necessity<br>
+                        of mental health check-up.
+                    </h1>
+
+                    <div class="home-content__buttons">
+                        <a href="#contact" class="smoothscroll btn btn--stroke" style="width:auto;">
+                            Predict health check up
+                        </a>
+
+                    </div>
+
+            </div>
+
+
+            <!-- preloader
+    ================================================== -->
+            <div id="preloader">
+                <div id="loader">
+                    <div class="line-scale-pulse-out">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- contact
+    ================================================== -->
+            <section id="contact" class="s-contact">
+
+                <div class="overlay"></div>
+                <div class="contact__line"></div>
+
+                <div class="row section-header" data-aos="fade-up">
+                    <div class="col-full">
+                        <h3 class="subhead">Try it out!</h3>
+                        <h1 class="display-2 display-2--light">Enter the details to predict if health check-up is
+                            needed!</h1>
+                    </div>
+                </div>
+
+                <div class="row contact-content" data-aos="fade-up">
+
+                    <div class="contact-primary">
+
+                        <h3 class="h6">Enter the details</h3>
+
+                        <form id="form1" name="form1" action="" method="">
+                            <!-- method:post action:check.php-->
+                            <fieldset>
+                                <input type="hidden" name="s.no" value="_" />
+                                <input type="hidden" name="Timestamp" value="_" />
+                                <input type="hidden" name="comments" value="_" />
+                                <div class="form-field">
+                                    <input name="Age" type="number" id="age" placeholder="Your Age" value=35 required=""
+                                        aria-required="true" class="full-width">
+                                </div>
+                                <select name="Gender" style="background-color: black;">
+                                    <option selected="selected">Gender?</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                                <div class="form-field">
+                                    <input name="Country" type="text" id="country" placeholder="Country" value="USA"
+                                        required="" aria-required="true" class="full-width">
+                                </div>
+                                <div class="form-field">
+                                    <input name="state" type="text" id="state"
+                                        placeholder="State in two characters(Caps)" value="IL" required=""
+                                        aria-required="true" class="full-width">
+                                </div>
+                                <select name="self_employed" style="background-color: black;">
+                                    <option>Self Employed?</option>
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                                <select name="family_history" style="background-color: black;">
+                                    <option>Family history?</option>
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                                <select name="treatment" style="background-color: black;">
+                                    <option>Treatment?</option>
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                                <select name="work_interfere" style="background-color: black;">
+                                    <option>Work Interfere?</option>
+                                    <option value="Sometimes" selected="selected">sometimes</option>
+                                    <option value="Never">Never</option>
+                                    <option value="Rarely">Rarely</option>
+                                    <option value="Often">Often</option>
+                                </select>
+                                <select name="no_employees" style="background-color: black;">
+                                    <option selected="employees" selected="selected">No of employees?</option>
+                                    <option value="1-5" selected="selected">1-5</option>
+                                    <option value="6-25">6-25</option>
+                                    <option value="26-100">26-100</option>
+                                    <option value="100-500">100-500</option>
+                                    <option value="500-1000">500-1000</option>
+                                    <option value="More than 1000">More than 1000</option>
+                                </select>
+                                <select name="remote_work" style="background-color: black;">
+                                    <option>Work remotely?</option>
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                                <select name="tech_company" style="background-color: black;">
+                                    <option>Tech company?</option>
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                                <select name="benefits" style="background-color: black;">
+                                    <option>Benefits?</option>
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Don't know">Dont know</option>
+                                </select>
+                                <select name="care_options" style="background-color: black;">
+                                    <option>Care options?</option>
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="
+                            No">No</option>
+                                    <option value="Not sure">Not Sure</option>
+                                </select>
+                                <select name="wellness_program" style="background-color: black;">
+                                    <option>Wellness programs?</option>
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Don't know">Dont know</option>
+                                </select>
+                                <select name="seek_help" style="background-color: black;">
+                                    <option>Seek help?</option>
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Don't know">Dont know</option>
+                                </select>
+                                <select name="anonymity" style="background-color: black;">
+                                    <option>Anonymity?</option>
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Don't know">Dont know</option>
+                                </select>
+                                <select name="leave" style="background-color: black;">
+                                    <option>Leave?</option>
+                                    <option value="Don't know" selected="selected">Dont know</option>
+                                    <option value="Somewhat easy">Somewhat easy</option>
+                                    <option value="Very easy">Very easy</option>
+                                    <option value="Somewhat difficult">Somewhat difficult</option>
+                                    <option value="Very difficult">Very difficult</option>
+                                </select>
+                                <select name="mental_health_consequence" style="background-color: black;">
+                                    <option>Mental health consequence?</option>
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Maybe">Maybe</option>
+                                </select>
+                                <select name="phys_health_consequence" style="background-color: black;">
+                                    <option>Physical health consequence?</option>
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Maybe">Maybe</option>
+                                </select>
+                                <select name="coworkers" style="background-color: black;">
+                                    <option>Co-Workers?</option>
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Some of them">Some of them</option>
+                                </select>
+                                <select name="supervisor" style="background-color: black;">
+                                    <option>Supervisor?</option>
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Some of them">Some of them</option>
+                                </select>
+                                <select name="mental_health_interview" style="background-color: black;">
+                                    <option>Mental health interview?</option>
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Maybe">Maybe</option>
+                                </select>
+                                <select name="phys_health_interview" style="background-color: black;">
+                                    <option>Physical health interview?</option>
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Maybe">Maybe</option>
+                                </select>
+                                <select name="mental_vs_physical" style="background-color: black;">
+                                    <option>Mental vs Physical?</option>
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="Don't know">Don't know</option>
+                                </select>
+                                <select name="obs_consequence" style="background-color: black;">
+                                    <option>Observe consequences?</option>
+                                    <option selected="selected" value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                                <!-- <div class="form-field">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                    </div> -->
+                                <input class="full-width btn--primary" value="Submit" type="button"
+                                    onclick="greeting()"></input>
+                                <div class="form-field">
+                                    <!-- <button class="full-width btn--primary" name="submit" id="submit" onclick="myFunction()">Submit</button> -->
+                                    <div class="submit-loader">
+                                        <div class="text-loader">Sending...</div>
+                                        <div class="s-loader">
+                                            <div class="bounce1"></div>
+                                            <div class="bounce2"></div>
+                                            <div class="bounce3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                        </form>
+
+
+                        <!-- contact-warning -->
+                        <div class="message-warning" style="display:none;">
+                            <input class="full-width btn--primary" value="Needed" type="button" style="background:red;">
+                        </div>
+
+                        <!-- contact-success -->
+                        <div class="message-success" style="display:none;">
+                            <input class="full-width btn--primary" value="Not needed" type="button">
+                        </div>
+
+                    </div> <!-- end contact-primary -->
+
+
+
+                </div> <!-- end contact-content -->
+
+            </section> <!-- end s-contact -->
+
+
+
+            <!-- Java Script
+    ================================================== -->
+            <script data-cfasync="false" src="email-decode.min.js"></script>
+            <script src="js/jquery-3.2.1.min.js" type="97c79f8123ca910610ebe467-text/javascript"></script>
+            <script src="js/plugins.js" type="97c79f8123ca910610ebe467-text/javascript"></script>
+            <script src="js/main.js" type="97c79f8123ca910610ebe467-text/javascript"></script>
+            <script src="rocket-loader.min.js" data-cf-settings="97c79f8123ca910610ebe467-|49" defer=""></script>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    function greeting() {
+        var formData = {};
+        $("#form1").serializeArray().map(function (x) {
+            formData[x.name] = Number(x.value) ? Number(x.value) : x.value;
+        });
+
+        $.ajax({
+            type: "POST",
+            crossDomain: true,
+            url: "https://putitinrice.azurewebsites.net/predict",
+            contentType: "application/json",
+            data: JSON.stringify(formData),
+            success: function (resp) {
+                console.log(resp);
+                var check = resp['treatment'];
+                if (check == 'true') {
+                    document.getElementsByClassName("message-success").style.display = "inline";
+                } else {
+                    document.getElementsByClassName("message-warning").style.display = "inline";
+                }
+            }
+        });
+
+    }
+</script>
+
+
+</html>
